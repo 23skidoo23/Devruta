@@ -1,7 +1,7 @@
 # Progreso — DevRuta
 
 Fase actual: **1 · Fundamentos web (HTML, CSS, responsive)**
-Tema actual: iniciar `fase-1-estatica/index.html`
+Tema actual: contenido del `<body>` en `fase-1-estatica/index.html` (perfil y lista de fases)
 
 ## Fases
 
@@ -30,6 +30,7 @@ Tema actual: iniciar `fase-1-estatica/index.html`
   - [x] Modos de permisos — 2026-10-29
   - [x] Controles: `Esc` y `/clear` — 2026-10-29
 - [ ] Fase 1 · prompts específicos, referencias con `@`, capturas de pantalla, preguntas sobre el código
+  - [x] Prompts específicos (archivo, restricciones, terminado comprobable) — 2026-10-31
 - [ ] Fase 2 · verificación con pruebas, depuración por causa raíz, IA con Git y `gh`
 - [ ] Fase 3 · modo plan, `SPEC.md` por entrevista, autocompletado, checkpoints y `/rewind`, skills propias
 - [ ] Fase 4 · pruebas primero (TDD), subagentes, `/code-review`, MCP, hooks, `/compact`, IA dentro de la app
@@ -38,6 +39,15 @@ Tema actual: iniciar `fase-1-estatica/index.html`
 ## Bitácora de sesiones
 
 <!-- Claude agrega una entrada al final de cada sesión, la más reciente arriba -->
+
+### Sesión 4 — 2026-10-31
+- **IA:** ✅ técnica "prompts específicos": archivo + restricciones + terminado **comprobable** (no confundir el terminado con el objetivo). Una restricción clave en esta fase: "explícame, no lo escribas".
+- **HTML:** esqueleto básico (`<!DOCTYPE>`, `<html lang>`, `<head>`, `<meta charset>`, `<meta viewport>`, `<title>`, `<body>`). Lo generé con Emmet (`!` + `Tab`) y entiendo cada línea.
+  - Probé quitar el viewport: con el `<body>` vacío no se nota; sin él, en el celular el contenido se vería diminuto.
+  - Ver la página: doble clic al archivo (`file:///`), y luego el ciclo editar → `Ctrl + S` → `F5`.
+- **Git:** commit `c82f4a2` subido. `git add <archivo>` para elegir qué entra (en vez de `add .`), `status` antes de cada commit; un `add` exitoso no imprime nada.
+- **DevRuta:** se agregó `fase-1-estatica/index.html` con el esqueleto.
+- Siguiente paso: técnica de IA "referenciar archivos con `@`" y llenar el `<body>` con etiquetas semánticas (perfil y lista de fases).
 
 ### Sesión 3 — 2026-10-31
 - **Git:** ✅ checkpoint de la Fase 0 cerrado. Hice mi primer commit (`b420727`) y lo subí a GitHub: `git init`, `status`, `add .`, `commit -m`, `log --oneline`, `remote add origin`, `remote -v`, `push -u origin main`.
