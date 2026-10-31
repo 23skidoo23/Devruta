@@ -1,11 +1,11 @@
 # Progreso — DevRuta
 
-Fase actual: **0 · Preparación con Git y GitHub**
-Tema actual: cerrar el checkpoint con el primer commit (al iniciar la Fase 1)
+Fase actual: **1 · Fundamentos web (HTML, CSS, responsive)**
+Tema actual: iniciar `fase-1-estatica/index.html`
 
 ## Fases
 
-- [ ] Fase 0 · Git y GitHub: instalación, configuración, primer repositorio — checkpoint: repositorio `devruta` en GitHub con el primer commit
+- [x] Fase 0 · Git y GitHub: instalación, configuración, primer repositorio — checkpoint: repositorio `devruta` en GitHub con el primer commit
 - [ ] Fase 1 · Fundamentos web (HTML, CSS, responsive) — checkpoint: página estática de DevRuta publicada
 - [ ] Fase 2 · JavaScript, npm y Git en equipo — checkpoint: progreso interactivo con localStorage
 - [ ] Fase 3 · React y Tailwind — checkpoint: DevRuta en React publicada
@@ -39,6 +39,15 @@ Tema actual: cerrar el checkpoint con el primer commit (al iniciar la Fase 1)
 
 <!-- Claude agrega una entrada al final de cada sesión, la más reciente arriba -->
 
+### Sesión 3 — 2026-10-31
+- **Git:** ✅ checkpoint de la Fase 0 cerrado. Hice mi primer commit (`b420727`) y lo subí a GitHub: `git init`, `status`, `add .`, `commit -m`, `log --oneline`, `remote add origin`, `remote -v`, `push -u origin main`.
+  - Comprobé que el correo del commit es el `@users.noreply.github.com`.
+  - Las advertencias `LF will be replaced by CRLF` son normales en Windows (finales de línea distintos), no son errores.
+  - Un `.gitignore` con `*` y `!.gitignore` ignora todo menos a sí mismo.
+- **IA:** la salida real de la terminal manda; la IA también se equivoca (predijo mal que `.codegraph/` no aparecería en `git status`).
+- **DevRuta:** repositorio publicado en https://github.com/23skidoo23/Devruta
+- Siguiente paso: técnica de IA de la Fase 1 (prompts específicos) y empezar `fase-1-estatica/index.html`.
+
 ### Sesión 2 — 2026-10-29
 - **IA:** terminé el bloque de IA de la Fase 0.
   - `CLAUDE.md` es memoria permanente: sobrevive a `/clear` y se comprueba con `/context`. Agregué la regla de recordarme la siguiente técnica de `/ia-pro`.
@@ -62,4 +71,4 @@ Tema actual: cerrar el checkpoint con el primer commit (al iniciar la Fase 1)
 
 ## Dudas pendientes
 
-- ¿Cuándo conviene usar aceptar ediciones?
+- ~~¿Cuándo conviene usar aceptar ediciones?~~ Respondida (sesión 3): cuando ya aprobé el plan y puedo revisar después con `git diff`; cobra sentido desde la Fase 3.
