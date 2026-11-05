@@ -1,7 +1,7 @@
 # Progreso — DevRuta
 
 Fase actual: **1 · Fundamentos web (HTML, CSS, responsive)**
-Tema actual: CSS básico para `fase-1-estatica/index.html` (el HTML ya está terminado)
+Tema actual: CSS básico para `fase-1-estatica/index.html` (hoja externa y selectores de etiqueta listos)
 
 ## Fases
 
@@ -32,6 +32,7 @@ Tema actual: CSS básico para `fase-1-estatica/index.html` (el HTML ya está ter
 - [ ] Fase 1 · prompts específicos, referencias con `@`, capturas de pantalla, preguntas sobre el código
   - [x] Prompts específicos (archivo, restricciones, terminado comprobable) — 2026-10-31
   - [x] Referenciar archivos con `@` (sin `@` la IA puede revisar una versión vieja del archivo) — 2026-11-03
+  - [x] Capturas de pantalla (el código dice que *debería* funcionar; la captura demuestra que *funciona*) — 2026-11-05
 - [ ] Fase 2 · verificación con pruebas, depuración por causa raíz, IA con Git y `gh`
 - [ ] Fase 3 · modo plan, `SPEC.md` por entrevista, autocompletado, checkpoints y `/rewind`, skills propias
 - [ ] Fase 4 · pruebas primero (TDD), subagentes, `/code-review`, MCP, hooks, `/compact`, IA dentro de la app
@@ -40,6 +41,18 @@ Tema actual: CSS básico para `fase-1-estatica/index.html` (el HTML ya está ter
 ## Bitácora de sesiones
 
 <!-- Claude agrega una entrada al final de cada sesión, la más reciente arriba -->
+
+### Sesión 6 — 2026-11-05
+- **IA:** ✅ técnica "capturas de pantalla": pegué una captura del navegador (`Win + Shift + S` → `Ctrl + V`) y la IA comprobó el resultado real contra el código.
+- **CSS:** hoja de estilos externa `style.css` conectada con `<link rel="stylesheet" href="style.css">` en el `<head>` (el `href` debe coincidir con el nombre real del archivo).
+  - Regla = selector + `{ propiedad: valor; }`. Selector de etiqueta: `h3 { ... }` afecta a todos los `h3`.
+  - Siempre cerrar cada declaración con `;`, aunque sea la última.
+  - Colores por nombre (`darkblue`) o hexadecimal (`#00008b`); `font-family` con fuentes de respaldo.
+  - **Contraste:** `aquamarine` sobre gris claro casi no se leía; lo cambié a `#005C3F`. Se comprueba con el verificador de WebAIM.
+- **HTML:** corregí "estará" y quité los "·" de los párrafos de las fases.
+- **Git:** commit `3c31f34` subido. En `git status --short`, `M` = modificado y `??` = archivo nuevo que Git aún no sigue.
+- **DevRuta:** la página ya tiene fondo, tipografía y colores en los títulos.
+- Siguiente paso: seguir con CSS (modelo de caja: `margin`, `padding`, `border`) para separar y enmarcar las fases. Técnica de IA siguiente: hacer preguntas sobre el código.
 
 ### Sesión 5 — 2026-11-03 a 2026-11-05
 - **IA:** ✅ técnica "referenciar archivos con `@`": la IA lee el archivo real en lugar de mi descripción. Sin `@`, puede revisar una versión vieja que quedó en su contexto.
