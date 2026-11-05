@@ -1,7 +1,7 @@
 # Progreso — DevRuta
 
 Fase actual: **1 · Fundamentos web (HTML, CSS, responsive)**
-Tema actual: contenido del `<body>` en `fase-1-estatica/index.html` (perfil y lista de fases)
+Tema actual: CSS básico para `fase-1-estatica/index.html` (el HTML ya está terminado)
 
 ## Fases
 
@@ -31,6 +31,7 @@ Tema actual: contenido del `<body>` en `fase-1-estatica/index.html` (perfil y li
   - [x] Controles: `Esc` y `/clear` — 2026-10-29
 - [ ] Fase 1 · prompts específicos, referencias con `@`, capturas de pantalla, preguntas sobre el código
   - [x] Prompts específicos (archivo, restricciones, terminado comprobable) — 2026-10-31
+  - [x] Referenciar archivos con `@` (sin `@` la IA puede revisar una versión vieja del archivo) — 2026-11-03
 - [ ] Fase 2 · verificación con pruebas, depuración por causa raíz, IA con Git y `gh`
 - [ ] Fase 3 · modo plan, `SPEC.md` por entrevista, autocompletado, checkpoints y `/rewind`, skills propias
 - [ ] Fase 4 · pruebas primero (TDD), subagentes, `/code-review`, MCP, hooks, `/compact`, IA dentro de la app
@@ -39,6 +40,19 @@ Tema actual: contenido del `<body>` en `fase-1-estatica/index.html` (perfil y li
 ## Bitácora de sesiones
 
 <!-- Claude agrega una entrada al final de cada sesión, la más reciente arriba -->
+
+### Sesión 5 — 2026-11-03 a 2026-11-05
+- **IA:** ✅ técnica "referenciar archivos con `@`": la IA lee el archivo real en lugar de mi descripción. Sin `@`, puede revisar una versión vieja que quedó en su contexto.
+  - Aprendo mejor con **ejemplos cortos** que luego replico (quedó guardado en la memoria de Claude).
+  - **MDN** (Mozilla Developer Network / MDN Web Docs) es la documentación oficial de HTML, CSS y JS: si la IA y MDN no coinciden, gana MDN.
+- **HTML:** etiquetas semánticas: `header`, `main`, `footer`, `section` (bloque temático con su `h2`) y `article` (contenido que se entiende solo, con `h3`). Enlaces con `<a href="...">texto</a>`: `href` es un atributo.
+  - `ol` es para listas con orden y `ul` para listas sin orden. No repetir la misma información dos veces.
+  - Replicar un ejemplo es copiar la estructura y poner mi propio contenido, no copiar el texto ("Ir a MDN").
+  - Las comillas invertidas `` ` `` son de Markdown; en HTML se ven tal cual.
+- **Git:** commit `c0ee9ae` subido. Un commit por tema (solo `index.html`, `PROGRESO.md` aparte). El área de preparación (*staging*) guarda una foto del archivo: si lo edito después del `add`, tengo que volver a hacer `add`. `HEAD -> main` es donde estoy y `origin/main` es lo que tiene GitHub; `17dd415..c0ee9ae main -> main` confirma el push.
+- **DevRuta:** el `<body>` tiene perfil, las 6 fases del roadmap como `article` y el enlace a GitHub en el footer.
+- Pendientes menores: acento en "estará" (línea 17) y el "·" suelto al inicio del párrafo de la Fase 0.
+- Siguiente paso: empezar CSS (enlazar una hoja de estilos y los primeros selectores). Técnica de IA siguiente: pegar capturas de pantalla para comparar un diseño con el resultado.
 
 ### Sesión 4 — 2026-10-31
 - **IA:** ✅ técnica "prompts específicos": archivo + restricciones + terminado **comprobable** (no confundir el terminado con el objetivo). Una restricción clave en esta fase: "explícame, no lo escribas".
