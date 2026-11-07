@@ -33,6 +33,7 @@ Tema actual: CSS básico para `fase-1-estatica/index.html` (hoja externa y selec
   - [x] Prompts específicos (archivo, restricciones, terminado comprobable) — 2026-10-31
   - [x] Referenciar archivos con `@` (sin `@` la IA puede revisar una versión vieja del archivo) — 2026-11-03
   - [x] Capturas de pantalla (el código dice que *debería* funcionar; la captura demuestra que *funciona*) — 2026-11-05
+  - [x] Preguntas sobre el código como a un senior (dónde + qué veo + ¿por qué? + "no lo arregles, explícame") — 2026-11-06
 - [ ] Fase 2 · verificación con pruebas, depuración por causa raíz, IA con Git y `gh`
 - [ ] Fase 3 · modo plan, `SPEC.md` por entrevista, autocompletado, checkpoints y `/rewind`, skills propias
 - [ ] Fase 4 · pruebas primero (TDD), subagentes, `/code-review`, MCP, hooks, `/compact`, IA dentro de la app
